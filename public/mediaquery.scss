@@ -1,0 +1,500 @@
+// ***--------------------------------[ MEDIA QUERY CSS ]-----------------------------------***
+
+// [ TABLET RESOLUTION ]
+
+@media (max-width:1024px){
+    
+    // [ HEADER PAGE ]
+
+    #landingpage {
+        background-image: url(Images/darkened-background.png);
+        background-size:cover;
+        gap: 35px;
+    }
+
+    #backgroundimg {
+        display:none;
+    }
+
+    #buttons {
+
+        width: 30%;
+
+        a {
+            font-size: 25px;
+        }
+    }
+    
+    #icons a {
+        font-size: 50px;
+    }
+
+    // [ PORTFOLIO PAGE ]
+
+    #header2 {
+       padding-top: 50px; 
+    }
+
+    #buttons2 {
+        button {
+            white-space: wrap;
+            font-size: 25px;
+            padding: 15px 35px;
+        }
+    }
+
+    #viewimage {
+        flex-direction: column;
+
+        section {
+            padding: 25px 15px;
+            justify-content: flex-start;
+            width: 100%;
+
+            button {
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+        figure {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 75%;
+                height: 70vh;
+            }
+
+            aside {
+                width: 75%;
+                
+                a {
+                    width: auto;
+                    padding: 25px 35px;
+                    font-size: 25px;
+
+                }
+                
+                h1 {
+                    display:none;
+                }
+
+                p {
+                    display:none;
+                }
+            }
+        }
+    }
+
+    #gallery1 {
+        width: 85%;
+        grid-template-rows: repeat(2, 500px);
+
+        img {
+            height: 100%;
+        }
+    }
+
+    #gallery3 {
+        flex-direction: column;
+
+        iframe {
+            width: 70vw;
+            height: 30vh;
+        }
+    }
+
+    #card {
+        img {
+            width: 20vh;
+            height: 35vh;
+        }
+    }
+
+    // [ ALT GALLERIES ]
+
+    #altgallery1, #altgallery3 {
+        padding: 0px 50px;
+    }
+
+    #card2 {
+        img {
+            width: 400px;
+            height: 500px;
+        }
+    }
+
+    #textbox3 a {
+        padding: 25px 15px;
+        font-size: 25px;
+    }
+
+    #stickybutton {
+        left: 85%;
+        width: 100px;
+        height: 100px;
+    }
+
+    // [ COMMISSION PAGE ]
+
+    #Commissions {
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #textbox {
+        width:85%;
+
+        a {
+            width: 50%;
+        }
+    }
+
+    #inquire {
+        display: block;
+    }
+
+    #popup.active {
+        display:block;
+    }
+
+    #popup {
+        display:none;
+        position:absolute;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+
+        #overlay{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            // background-color: black;
+        }   
+    }
+
+    #Form {
+        display:flex;
+        background-color: black;
+        border-radius: 25px;
+        padding: 75px 50px;
+        width: 75%;
+        height: 50%;
+        justify-content: center;
+        box-shadow: 0px 2px 2px 5px rgba(0,0,0,0.05) ;
+    }
+
+    #forum {
+        #exitbutton {
+            display: none;
+            margin-bottom: 50px;
+            border: none;
+            background-color: alpha($color: #000000);
+            background-image: url(Images/Exit.png);
+            background-size: cover;
+            width:60px;
+            height:60px;
+            position: sticky;
+        }
+
+        #exitbutton.active {
+            display:block;
+        }
+
+        input, select, textarea {
+            font-size: 25px;
+        }
+        
+        input, select {
+            height: 50px;
+        }
+
+        #description {
+            height: 350px;
+        }
+    }
+
+    #formbutton {
+        font-size: 25px;
+        width: 40%;
+        padding: 25px 0px;
+    }
+
+    // [ ABOUT PAGE ]
+
+    footer {
+        flex-direction: column-reverse;
+        gap: 35px;
+
+        aside {
+            text-align: center;
+            width: 75%;
+        }
+    }
+
+    #profile2 {
+        height: 319px;
+        width: 319px;
+    }
+
+    #info {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    // [ FONTS ]
+
+    p {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+// [ PHONE RESOLUTION ]
+@media (max-width:720px){
+
+    // [ HEADER ]
+    #landingpage {
+        gap: 25px;
+    }
+
+    #Title {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    #Buttons {
+        align-items: center;
+        
+        a {
+            font-size: 15px;
+            width: 100%;
+        }
+    }
+
+    #icons  {
+        a {
+            font-size: 35px;
+        }
+    }
+
+    // [ PORTOFLIO PAGE ]
+
+    #Portfolio {
+        overflow-x: hidden;
+        gap: 15px;
+    }
+
+    #stickybutton {
+        left: 92%;
+        width: 75px;
+        height: 75px;
+    }
+
+    #buttons2 {
+        button {
+            white-space: nowrap;
+            font-size: 15px;
+            padding: 15px 35px;
+        }
+    }
+
+    #viewimage {
+        section {
+            padding: 10px 15px;
+
+            button {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        figure {
+            aside {
+                padding: 0px;
+
+                button {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    #buttons2 {
+        overflow-y: hidden;
+        overflow-x:auto;
+        width:85%;
+        height:50px;
+    }
+
+    #header2  {
+        width: 100%;
+        h1 {
+            text-align: center;
+            width:100%;
+        }
+    }
+
+    #gallery1 {
+        grid-template-rows: repeat(2, 250px);
+    }
+
+    #gallery3 {
+        flex-direction: column;
+
+        iframe {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+
+    #card {
+        img {
+            width: 35vh;
+            height: 55vh;
+        }
+    }
+        
+    #stickybutton {
+        left: 75%;
+        top: 185%;
+        border: 3px solid black;
+        border-radius: 100px;
+    }
+
+    // [ALT GALLERIES]
+
+    #altgallery1, #altgallery3 {
+        margin-bottom: 25px;
+        gap:25px;
+    }
+
+    #altgallery2 {
+
+        p {
+            font-size: 15px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    #card2 {
+        flex-direction: column;
+        gap: 15px;
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    #textbox3 {
+        padding: 0px;
+        gap: 15px;
+
+        a {
+            padding: 15px;
+            font-size: 15px
+        }
+    }
+
+
+    // [ COMMISSION PAGE ]
+
+    #textbox {
+        width:100%;
+        gap: 15px;
+
+        a {
+            width: 80%;
+        }
+    }
+
+    #Form {
+        height:65%;
+
+        #formbutton {
+            padding: 15px 0px;
+            font-size:20px; 
+        }
+    }
+
+    #forum {
+
+        input, select, textarea {
+            font-size:15px;
+        }
+
+        #exitbutton {
+            margin-bottom:15px;
+            width:35px;
+            height:35px;
+        }
+
+        input, select {
+            height:30px;
+        }
+        
+        #description {
+            height: 300px;
+        }
+    }
+
+
+    // [ ABOUT PAGE ]
+    
+    footer {
+        padding: 0px 25px;
+        gap: 15px;
+
+        aside {
+            gap: 15px;
+            width: 100%;
+        }
+    }
+
+    #textbox2 {
+        gap: 15px;
+    }
+
+    #info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        img {
+            width: 157px;
+            height: 35px;
+        }
+    }
+
+    #profile2 {
+        width:200px;
+        height:200px;
+    }
+
+
+    // [ FONTS ]
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+

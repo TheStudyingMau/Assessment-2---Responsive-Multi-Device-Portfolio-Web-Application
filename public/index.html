@@ -1,0 +1,174 @@
+<html>
+
+    <head>
+        <title>TheAnonymousMau</title>
+
+        <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com https://www.youtube-nocookie.com;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Essential-->
+        <link rel="stylesheet" href="variables.css"> <!-- Variables needed for the CSS -->
+        <link rel="stylesheet" href="style.css"> <!-- Main CSS Style-->
+        <link rel="stylesheet" href="gallery.css"> <!-- Separate CSS for the Alternating Gallery-->
+        <link rel="stylesheet" href="mediaquery.css"> <!-- CSS responsible for media queries. -->
+
+        <!-- Icons -->
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Landing Page-->
+        <header>
+            <div id="landingpage">
+                <img id="profile" src="Images/pfp.PNG">
+                <figure id="Title">
+                    <h1>TheAnonymousMau</h1>
+                    <p>Illustrator / Animator / Coder</p>
+                </figure>
+                
+                
+                <article id="Buttons">
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#Commissions" >Commissions</a>
+                    <a href="#About" >About</a>
+                </article>
+
+                <section id="Socials">
+                    <div id="icons">
+                        <a href="https://www.instagram.com/theanonymousmau/" class="fa-brands fa-instagram"></a>
+                        <a href="https://www.youtube.com/@theanonymousmau" class="fa-brands fa-youtube"></a>
+                        <a href="https://bsky.app/profile/theanonymousmau.bsky.social" class="fa-brands fa-bluesky"></a>
+                        <a href="https://x.com/theanonymousmau" class="fa-brands fa-x-twitter"></a>
+                    </div>
+
+                    <p>theanonymousmau@gmail.com</p>
+                </section>
+            </div>
+            <img id="backgroundimg" src="Images/background.jpg">
+        </header>
+
+
+        <main id="Portfolio">
+            <section id="header2">
+                <h1>PORTFOLIO</h1>
+                <a id="stickybutton" onclick="switchTheme()"></a>
+            </section>
+
+            <section id="buttons2">
+                <button id="gallerybtn1" onclick="artworkspage()">Artworks</button>
+                <button id="gallerybtn2" onclick="comicspage()">Comics</button>
+                <button id="gallerybtn3" onclick="animationpage()">Animations</button>
+            </section>
+            
+            <section id="viewimage">
+                <section>
+                    <button id="exitbutton2" onclick="closeimage()"></button>
+                </section>
+                <figure>
+                    <img id="contentimg" src="">
+                    <aside>
+                        <h1 id="contenttitle">Title</h1>
+                        <a id="viewpost" href="">View Post</a>
+                    </aside>
+                </figure>
+            </section>
+            
+            <!-- GALLERIES -->
+
+            <!-- GALLERY 1 -->
+            <section id="gallery1"></section>
+            <section id="altgallery1"></section>
+            
+            <!-- GALLERY 2 -->
+            <section id="gallery2">
+                <div id="frame">
+                </div>
+            </section>
+            <section id="altgallery2">
+                <img src="Images/underconstruction.png">
+                <p>Websites coming soon...</p>
+            </section>
+
+            <!-- GALLERY 3 -->
+            <section id="gallery3"></section>
+            <section id="altgallery3"></section>
+
+        </main>
+
+
+        <main id="Commissions">
+            <figure id="textbox">
+                <div id="Title2">
+                    <h1>COMMISSIONS</h1>
+                    <p>Comics, illustrations, or animations are all in my range for my commission sheet. Press the button below to know more about my commission sheet which contains the pricing and conditions.</p>
+                    <p>When you’re interested, you can contact me through my email below.</p>
+                    <p id="email">theanonymousmau@gmail.com</p>
+                </div>
+
+                <a id="commissioninfo">Commission Info</a>
+                <a id="inquire" onclick="openpopup()">Inquire</a>
+            </figure>
+
+            <!-- This handles the form to be displayed normally or as a popup-->
+            <!-- The form is heavily wrapped to be able to darkened the background page by my popup forum page in phone & tablet sizes. -->
+            <figure id="popup">
+                <div id="Overlay">
+                    <section id="Form">
+                        <form id="forum">
+                            <button id="exitbutton" type="button" onclick="closepopup()"></button>
+                            <input placeholder="Email" type="text" id="emailaddress">
+                            <select id="dropdown">
+                                <option value="comics">Comics</option>
+                                <option value="artwork" selected>Artwork</option>
+                                <option value="animation">Animation</option>
+                                <option value="game development">Game Development</option>
+                                <option value="website development">Website Development</option>                    
+                            </select>
+                            <textarea id="description" type="text" placeholder="Description"></textarea>
+                             <button id="formbutton" type="submit">Submit</button>
+                        </form>
+                    </section>
+                </div>
+            </figure>
+        </main>
+
+        <!-- Footer holds the rest of the about info. -->
+        <footer id="About">
+            <aside>
+                <section id="textbox2">
+                    <h1>ABOUT ME</h1>
+                    <p>I am a professional illustrator, developing animator, and a growing coder. My freelance service brings your ideas to life at a fair price.</p>
+                    <p>Connect with me through my socials below or my commissions page to start your project today!</p>
+                </section>
+
+                <section id="info">
+                    <figure id="experienceinfo">
+                        <h1>4</h1>
+                        <img src="Images/subtitle.png">
+                    </figure>
+
+                    <figure id="socials2">
+                        <a href="https://www.instagram.com/theanonymousmau/" class="fa-brands fa-instagram"></a>
+                        <a href="https://www.youtube.com/@theanonymousmau" class="fa-brands fa-youtube"></a>
+                        <a href="https://bsky.app/profile/theanonymousmau.bsky.social" class="fa-brands fa-bluesky"></a>
+                        <a href="https://x.com/theanonymousmau" class="fa-brands fa-x-twitter"></a>
+                    </figure>
+                </section>
+            </aside>
+
+            <img id="profile2" src="Images/profile.png">
+
+        </footer>
+        
+        <!-- JavaScript File Responsible for Functions-->
+        <script src="index.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+
+</html>

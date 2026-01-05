@@ -1,0 +1,213 @@
+// ***--------------------------------[ GALLERY CSS ]-----------------------------------***
+
+@use "variables" as var;
+
+// [[ PORTFOLIO ART GALLERY ]]
+// When ".active" is active, the display is enabled.
+
+#gallery1 {
+    margin: 0px 25px;
+    display: grid; 
+    grid-auto-flow: column;
+    grid-auto-columns: 250px; 
+    grid-template-rows: repeat(2, 250px); 
+    width:95%;
+    gap: 15px;
+    overflow-x: auto; // This helps make the frame scrollable.
+    overflow-y: hidden; // Disables the y-axis to scroll.
+    animation: fadeIn 0.5s ease-in-out;
+
+    img { 
+        object-fit:cover; 
+        height:250px; 
+        width:100%;
+    }
+
+    &.active {
+        display:none;
+    }
+}
+
+#gallery2 {
+    display:flex;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+
+    &.active {
+        display: none;
+    }
+
+    #frame {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: 0px 50px;
+        gap: 50px;
+    }
+}
+
+#card {
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+        color:white;
+        font-size: medium;
+        text-decoration: none;
+        
+        
+        img {
+            width: 100%;
+            height: 50vh;
+            object-fit: fill;
+        }       
+        
+    &:hover {
+        color: var(--);
+    }
+}
+
+#gallery3 {
+    display:flex; 
+    column-count: 2;
+    gap: 50px;
+    animation: fadeIn 0.5s ease-in-out;
+
+    &.active {
+        display:none;
+    }
+}
+
+/////////////////////////////////////////////////
+// [[ ALT GALLERIES ]]
+
+#altgallery1 {
+    display:flex;
+    padding: 0px 25px;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+
+
+    &.active {
+        display:none;
+    }
+}
+
+#altgallery2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    &.active {
+        display: none;
+    }
+}
+
+#altgallery3 {
+    display:flex;
+    padding: 0px 25px;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+
+    &.active {
+        display:none;
+    }
+}
+
+
+#textbox3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+
+    div {
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    a {
+        width: auto;
+        text-align: center;
+        border-radius: 15px;
+        background-color: var(--maincolor);
+        padding: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color:white;
+        
+        &:hover {
+            background-color: white;
+            color: var(--maincolor);
+        }
+
+    }
+}
+
+#card2 {
+    display:flex;
+    flex-direction: row;
+
+    img {
+        object-fit: cover;
+        height:400px;
+        width: 400px;
+    }
+}
+
+/////////////////////////////////////////////////
+
+// [[ BUTTONS ]]
+
+#buttons2 button { // Main Coloring
+    white-space: nowrap;
+    color:white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 35px;
+    width:200px;
+    text-align: center;
+    background-color: alpha($color: #ffffff);
+
+    &:hover {
+        font-weight: bold;
+        border: 3px solid white;
+    }
+}
+
+#gallerybtn1.active {
+    background-color: var(--maincolor);
+    font-weight: bold;
+    border: none;
+}
+
+#gallerybtn2.active {
+    background-color: var(--maincolor);
+    font-weight: bold;
+    border: none;
+}
+
+#gallerybtn3.active {
+    background-color: var(--maincolor);
+    font-weight: bold;
+    border: none;
+}
