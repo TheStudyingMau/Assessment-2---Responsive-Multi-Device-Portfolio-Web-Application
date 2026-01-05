@@ -7,7 +7,7 @@
     // [ HEADER PAGE ]
 
     #landingpage {
-        background-image: url(Images/darkened-background.png);
+        background-image: var(--altbackground);
         background-size:cover;
         gap: 35px;
     }

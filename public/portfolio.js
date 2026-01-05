@@ -71,8 +71,14 @@ function switchTheme(){
     document.documentElement.style.setProperty('--btn_hover_image', 'url("Images/glowbutton2.png")');
     document.documentElement.style.setProperty('--maincolor', '#3A79CC');
     document.documentElement.style.setProperty('--accentcolor', '#2B2B2B');
-    document.getElementById('commissioninfo').style.color = 'white';
     document.documentElement.style.setProperty('--hovercolor', 'black');
+    document.getElementById('commissioninfo').style.color = 'white';
+
+    // Changes the background image.
+    document.documentElement.style.setProperty('--altbackground', 'url("Images/darkened-background3.png")');
+    background = document.getElementById('backgroundimg');
+    background.src = "Images/background3.PNG"
+    
     
     switchPage('gallerybtn1', 'altgallery1');
 }
@@ -89,8 +95,14 @@ function restoreTheme(){
     document.documentElement.style.setProperty('--btn_hover_image', 'url("Images/glowbutton.png")');
     document.documentElement.style.setProperty('--maincolor', '#DB0F0F');
     document.documentElement.style.setProperty('--accentcolor', '#647271');
-    document.getElementById('commissioninfo').style.color = 'black';
     document.documentElement.style.setProperty('--hovercolor', 'white');
+    document.getElementById('commissioninfo').style.color = 'black';
+
+    // Restores the background image.
+    background = document.getElementById('backgroundimg');
+    background.src = "Images/background.jpg"
+    document.documentElement.style.setProperty('--altbackground', 'url("Images/darkened-background.png")');
+    
     
     switchPage('gallerybtn1', 'gallery1');
 }
