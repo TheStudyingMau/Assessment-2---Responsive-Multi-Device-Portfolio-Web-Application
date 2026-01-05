@@ -1,6 +1,7 @@
 :root {
   --maincolor: #DB0F0F;
   --accentcolor: #647271;
+  --hovercolor: white;
   --btn_image: url(Images/switchbutton.png);
   --btn_hover_image: url(Images/glowbutton.png);
 }
