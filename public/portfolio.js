@@ -69,7 +69,7 @@ function switchTheme(){
     document.getElementById('gallerybtn3').textContent = "Creative Projects";
     document.documentElement.style.setProperty('--btn_image', 'url("Images/switchbutton2.png")');
     document.documentElement.style.setProperty('--btn_hover_image', 'url("Images/glowbutton2.png")');
-    document.documentElement.style.setProperty('--maincolor', '#EF0D51');
+    document.documentElement.style.setProperty('--maincolor', '#3A79CC');
     document.documentElement.style.setProperty('--accentcolor', '#2B2B2B');
     document.getElementById('commissioninfo').style.color = 'white';
     document.documentElement.style.setProperty('--hovercolor', 'black');
