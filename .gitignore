@@ -1,2 +1,8 @@
 .vercel
 .env*.local
+node_modules
+images.json
+comics.json
+animations.json
+games.json
+projects.json
