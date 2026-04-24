@@ -15,7 +15,8 @@ const connectionString = process.env.MONGODB_URI;
 const client = new MongoClient(connectionString);
 
 // Serves the static files (HTML, CSS, Javascript, and etc.)within 'public' directory.
-app.use(express.static('public')); 
+const path = require('path'); 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // [ EXPRESS GETTING DATA ]
 
