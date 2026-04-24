@@ -247,7 +247,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url(Images/background2.PNG);
+  background-image: url(Images/background2.png);
   background-size: cover;
   background-position: 0 center;
   color: white;
