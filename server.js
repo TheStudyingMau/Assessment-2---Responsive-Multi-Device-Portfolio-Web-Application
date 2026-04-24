@@ -7,7 +7,11 @@ const port = 1106;
 
 // [ MONGODB SETUP ]
 const { MongoClient } = require('mongodb'); 
+
+// Code used to instruct node to check for environment variables from vercel and use them to connect to MongoDB. This is used to keep the connection string private and secure.
 const connectionString = process.env.MONGODB_URI;
+
+// Connection string is instantiated as a MongoClient object to be used for connecting to MongoDB.
 const client = new MongoClient(connectionString);
 
 // Serves the static files (HTML, CSS, Javascript, and etc.)within 'public' directory.
