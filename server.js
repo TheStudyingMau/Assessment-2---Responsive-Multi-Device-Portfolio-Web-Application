@@ -7,7 +7,7 @@ const port = 1106;
 
 // [ MONGODB SETUP ]
 const { MongoClient } = require('mongodb'); 
-const connectionString = "mongodb://localhost:27017";
+const connectionString = process.env.MONGODB_URI;
 const client = new MongoClient(connectionString);
 
 // Serves the static files (HTML, CSS, Javascript, and etc.)within 'public' directory.
@@ -143,7 +143,10 @@ app.post ('/Inquiries', async (req, res) => {
 	}
 })
 
-// This checks if the app is functioning.
-app.listen(port, () => { 
-	console.log(`Server running at http://localhost:${port}`);}
-) 
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+  });
+}
+
+module.exports = app;
