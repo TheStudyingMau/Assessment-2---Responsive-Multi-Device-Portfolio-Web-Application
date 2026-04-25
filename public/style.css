@@ -282,6 +282,11 @@ button {
   font-size: 25px;
   color: black;
 }
+
+.commissioninfo {
+  text-decoration:none;
+}
+
 #textbox #commissioninfo {
   color: black;
   background-color: var(--accentcolor);
