@@ -88,9 +88,8 @@
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    animation: fadeIn 0.5s ease-in-out;
     gap: 30px;
-
+    animation: fadeIn 0.5s ease-in-out;
 
     &.active {
         display:none;
