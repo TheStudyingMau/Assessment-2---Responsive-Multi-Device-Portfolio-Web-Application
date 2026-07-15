@@ -122,34 +122,26 @@ async function createAltGallery3() {
 
     const altgallery3 = document.getElementById('altgallery3');
 
-    projectList.forEach(project => {
+    projectList.forEach(app => {
         // Frames
         const card = document.createElement('figure');
-        const details = document.createElement('section');
-        const textbox = document.createElement('div');
         
         // Elements
         const image = document.createElement('img');
-        const title = document.createElement('h1');
-        const description = document.createElement('p');
-        const button = document.createElement('a');
 
         // Assigning the Details
         card.id = "card2";
-        details.id = "textbox3";
-        image.src = project.url;
-        title.textContent = project.name;
-        description.textContent = project.description;
-        button.textContent = "View";
-        button.href = project.source;
+        image.src = app.url;
+        button.href = app.source;
+
+        // [ CLICKABLE FUNCTION ]
+        image.addEventListener('click', () => {
+            window.location.href = app.source; // navigates in the same tab
+            // or: window.open(game.url, '_blank'); // opens in a new tab
+        });
         
         // Appending the elements in the HTML.
         card.append(image);
-        card.append(details);
-        textbox.append(title);
-        textbox.append(description);
-        details.append(textbox);
-        details.append(button);
         altgallery3.append(card);
     })
 }
