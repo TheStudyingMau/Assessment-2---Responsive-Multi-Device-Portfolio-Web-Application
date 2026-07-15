@@ -69,31 +69,16 @@ async function createAltGallery1() {
     gameList.forEach(game => {
         // Frames
         const card = document.createElement('figure');
-        const details = document.createElement('section');
-        const textbox = document.createElement('div');
         
         // Elements
         const image = document.createElement('img');
-        const title = document.createElement('h1');
-        const description = document.createElement('p');
-        const button = document.createElement('a');
 
         // Assigning the Details
         card.id = "card2";
-        details.id = "textbox3";
         image.src = game.url;
-        title.textContent = game.name;
-        description.textContent = game.description;
-        button.textContent = "View";
-        button.href = game.source;
         
         // Appending the elements in the HTML.
         card.append(image);
-        card.append(details);
-        textbox.append(title);
-        textbox.append(description);
-        details.append(textbox);
-        details.append(button);
         altgallery1.append(card);
     })
 }

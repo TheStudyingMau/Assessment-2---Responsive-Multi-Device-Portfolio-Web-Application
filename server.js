@@ -21,12 +21,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // [ EXPRESS GETTING DATA ]
 
 // Gets the Images needed or the website.
-app.get ('/Images', async (req, res) => {
+app.get ('/Artworks', async (req, res) => {
 	try { // Tries to connect to MongoDB.
 		await client.connect();
 	
 		const Database = client.db('Images');
-		const imageCollection = Database.collection('Images'); // Gets the Images Collection from my MongoDB
+		const imageCollection = Database.collection('Artworks'); // Gets the Images Collection from my MongoDB
 		
 		// Finds the collection and stores it in an array.
 		const imageEntries = await imageCollection.find().toArray();
@@ -35,7 +35,7 @@ app.get ('/Images', async (req, res) => {
 		res.json(imageEntries); 
 
 	} catch (error) { // Any exception will be displayed in console.
-		console.error("Error fetching images:", error);
+		console.error("Error fetching artworks:", error);
 		res.status(500).json({ error: "Failed to fetch data." })
 	}
 	
@@ -104,12 +104,12 @@ app.get ('/Games', async (req, res) => {
 });
 
 // Gets the coding projects data needed for the website.
-app.get ('/Projects', async (req, res) => {
+app.get ('/Apps', async (req, res) => {
 	try { // Tries to connect to MongoDB.
 		await client.connect();
 	
 		const Database = client.db('Images');
-		const projectCollection = Database.collection('Projects'); // Gets the Projects Collection from my MongoDB
+		const projectCollection = Database.collection('Apps'); // Gets the Projects Collection from my MongoDB
 		
 		// Finds the collection and stores it in an array.
 		const projectEntries = await projectCollection.find().toArray();
