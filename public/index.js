@@ -132,7 +132,6 @@ async function createAltGallery3() { // Apps Section
         // Assigning the Details
         card.id = "card2";
         image.src = app.url;
-        button.href = app.source;
 
         // [ CLICKABLE FUNCTION ]
         image.addEventListener('click', () => {
