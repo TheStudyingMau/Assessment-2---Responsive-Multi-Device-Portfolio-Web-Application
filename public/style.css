@@ -143,7 +143,6 @@ button {
   color: white;
   gap: 25px;
   min-height: 100vh;
-  height: auto;
 }
 
 #viewimage.active {

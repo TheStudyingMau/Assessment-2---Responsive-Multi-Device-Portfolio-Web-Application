@@ -12,6 +12,7 @@
     grid-auto-columns: 250px; 
     grid-template-rows: repeat(2, 250px); 
     width:95%;
+    height:1000%;
     gap: 15px;
     overflow-x: auto; // This helps make the frame scrollable.
     overflow-y: hidden; // Disables the y-axis to scroll.
