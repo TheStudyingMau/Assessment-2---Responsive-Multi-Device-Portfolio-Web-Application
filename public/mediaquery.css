@@ -228,13 +228,6 @@
     margin-bottom: 25px;
     gap: 25px;
   }
-  #altgallery2 p {
-    font-size: 15px;
-  }
-  #altgallery2 img {
-    width: 200px;
-    height: 200px;
-  }
   #altgallery1, #altgallery2, #altgallery3 {
     flex-direction: column;
     gap: 15px;
