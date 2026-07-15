@@ -179,7 +179,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     overlay.addEventListener("click", function(e) {
         // If the click target IS the overlay (not the image), close it
-        if (e.target === overlay && e.target == overlay2) {
+        if (e.target === overlay || e.target == overlay2) {
             overlay.classList.remove("active");
             unlockScroll(); // ← restore scrolling
         }
