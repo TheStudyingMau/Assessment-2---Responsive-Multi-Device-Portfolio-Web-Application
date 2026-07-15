@@ -165,7 +165,7 @@ function viewimage(data) {
     lockScroll(); // ← prevents scrolling
 
     imageview.src = data.url;
-    a.href = data.source;
+    imageview.dataset.source = data.source; // ← store the post link on the image itself
 }
 
 // [ POP UP EXIT FUNCTION ]
@@ -174,10 +174,15 @@ window.addEventListener("DOMContentLoaded", () => {
     const image = document.getElementById("contentimg");
 
     overlay.addEventListener("click", function(e) {
-        // Anything that isn't a direct click on the image counts as "outside"
-        if (e.target !== image) {
+        if (e.target === image) {
+        // Clicked the image itself → open the post link in a new tab
+            if (image.dataset.source) {
+                window.open(image.dataset.source, "_blank");
+            }
+        } else {
+            // Clicked outside → close the popup
             overlay.classList.remove("active");
-            unlockScroll(); // ← restore scrolling
+            unlockScroll();
         }
     });
 });
