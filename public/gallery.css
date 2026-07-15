@@ -98,6 +98,9 @@
   gap: 15px;
   animation: fadeIn 0.5s ease-in-out;
 }
+#altgallery2.active {
+  display: none;
+}
 
 #altgallery3 {
   display: flex;

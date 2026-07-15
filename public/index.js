@@ -159,6 +159,7 @@ createGallery1()
 createGallery2() 
 createGallery3() 
 createAltGallery1();
+createAltGallery2();
 createAltGallery3();
 
 // [ LOCK SCROLLS ]
