@@ -158,10 +158,8 @@ function unlockScroll() {
 
 function viewimage(data) {
     document.getElementById("viewimage").classList.add("active");
-    document.getElementById("header2").classList.add("active");
 
     const imageview = document.getElementById("contentimg");
-    const h1 = document.getElementById("contenttitle");
     const a = document.getElementById("viewpost");
 
     lockScroll(); // ← prevents scrolling
