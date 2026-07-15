@@ -74,7 +74,6 @@ async function createAltGallery1() {
         const image = document.createElement('img');
 
         // Assigning the Details
-        card.id = "card2";
         image.src = game.url;
 
         // [ CLICKABLE FUNCTION ]
@@ -84,8 +83,7 @@ async function createAltGallery1() {
         });
         
         // Appending the elements in the HTML.
-        card.append(image);
-        altgallery1.append(card);
+        altgallery1.append(image);
     })
 }
 
@@ -100,8 +98,6 @@ async function createAltGallery2() { // Websites Section
         const card = document.createElement('figure');  // Frame
         const image = document.createElement('img'); // Element
 
-        // Assigning the Details
-        card.id = "card3";
         image.src = website.thumbnail;
 
         // [ CLICKABLE FUNCTION ]
@@ -111,8 +107,7 @@ async function createAltGallery2() { // Websites Section
         });
         
         // Appending the elements in the HTML.
-        card.append(image);
-        altgallery2.append(card);
+        altgallery2.append(image);
     })
 }
 
