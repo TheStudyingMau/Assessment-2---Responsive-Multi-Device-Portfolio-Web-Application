@@ -146,7 +146,8 @@ button {
     align-items: center;
     color:white;
     gap:25px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 #viewimage.active { // Responsible for displaying the viewing image section of the website.

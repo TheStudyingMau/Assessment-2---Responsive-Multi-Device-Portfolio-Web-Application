@@ -143,8 +143,6 @@
 #card2 img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 70%;
-  width: 100%;
 }
 
 #buttons2 button {
