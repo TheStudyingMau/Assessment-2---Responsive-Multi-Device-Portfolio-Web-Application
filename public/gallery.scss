@@ -154,11 +154,10 @@
 }
 
 #altgallery1, #altgallery2, #altgallery3 {
-
     img {
         object-fit: cover;
         max-width:100%;
-        max-height:50%; // Image limited to 50% of its height.
+        max-height:50%; 
     }
 }
 
