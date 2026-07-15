@@ -158,6 +158,16 @@ function viewimage(data) {
     a.href = data.source;
 }
 
+// [ POP UP EXIT FUNCTION ]
+document.getElementById("viewimage").addEventListener("click", function(e) { // Listens for events within "viewimage" section 
+    const popup = document.getElementById("popupcontent");
+
+    // If the click is NOT inside the popup content, close it
+    if (!popup.contains(e.target)) {
+        this.classList.remove("active");
+    }
+});
+
 // [ COMMISSION INQUIRY  ]
 
 // [POPUPS]
