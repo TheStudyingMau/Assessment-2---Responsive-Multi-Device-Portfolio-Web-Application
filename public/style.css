@@ -173,7 +173,7 @@ button {
   max-height: 100%;
 }
 #viewimage #popupcontent img {
-  max-width: 50%;
+  max-width: 40%;
   max-height: 90%;
   object-fit: contain;
 }
