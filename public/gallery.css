@@ -90,11 +90,11 @@
 
 #altgallery2 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 15px;
+  padding: 0px 25px;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 30px;
   animation: fadeIn 0.5s ease-in-out;
 }
 #altgallery2.active {
