@@ -89,7 +89,7 @@ async function createAltGallery1() {
     })
 }
 
-async function createAltGallery3() {
+async function createAltGallery2() {
     const response = await fetch('/Websites');
     const websiteList = await response.json();
 
