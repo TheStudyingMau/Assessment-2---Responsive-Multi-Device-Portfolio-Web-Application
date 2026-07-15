@@ -3,7 +3,7 @@
 // [ CONSTRUCTING GALLERY WITH DATA FROM MONGODB ]
 
 async function createGallery1() {
-	const response = await fetch('/Images'); // Finds the "Images" collection.
+	const response = await fetch('/Artworks'); // Finds the "Images" collection.
 	const imageList = await response.json(); // Waits and stores the json file to an accessible variable.
 	
     const gallery1 = document.getElementById('gallery1'); // Gets access to the container for the first portfolio gallery.
@@ -76,6 +76,12 @@ async function createAltGallery1() {
         // Assigning the Details
         card.id = "card2";
         image.src = game.url;
+
+        // [ CLICKABLE FUNCTION ]
+        image.addEventListener('click', () => {
+            window.location.href = game.url; // navigates in the same tab
+            // or: window.open(game.url, '_blank'); // opens in a new tab
+        });
         
         // Appending the elements in the HTML.
         card.append(image);
@@ -84,7 +90,7 @@ async function createAltGallery1() {
 }
 
 async function createAltGallery3() {
-    const response = await fetch('/Projects');
+    const response = await fetch('/Apps');
     const projectList = await response.json();
 
     const altgallery3 = document.getElementById('altgallery3');

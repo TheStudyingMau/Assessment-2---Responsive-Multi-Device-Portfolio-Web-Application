@@ -84,7 +84,7 @@
 #altgallery1 {
     display:flex;
     padding: 0px 25px;
-    flex-direction: column;
+    flex-direction: row;
     overflow-y: auto;
     overflow-x: hidden;
     gap: 30px;
@@ -168,8 +168,8 @@
 
     img {
         object-fit: cover;
-        height:400px;
-        width: 400px;
+        height: 70%;
+        width: 100%;
     }
 }
 
