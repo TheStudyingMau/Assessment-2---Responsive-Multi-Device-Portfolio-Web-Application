@@ -102,7 +102,7 @@ async function createAltGallery2() { // Websites Section
 
         // Assigning the Details
         card.id = "card2";
-        image.src = website.url;
+        image.src = website.thumbnail;
 
         // [ CLICKABLE FUNCTION ]
         image.addEventListener('click', () => {
