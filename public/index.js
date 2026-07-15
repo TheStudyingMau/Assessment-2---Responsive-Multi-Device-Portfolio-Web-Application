@@ -101,7 +101,7 @@ async function createAltGallery2() { // Websites Section
         const image = document.createElement('img'); // Element
 
         // Assigning the Details
-        card.id = "card2";
+        card.id = "card3";
         image.src = website.thumbnail;
 
         // [ CLICKABLE FUNCTION ]
@@ -130,7 +130,7 @@ async function createAltGallery3() { // Apps Section
         const image = document.createElement('img');
 
         // Assigning the Details
-        card.id = "card2";
+        card.id = "card4";
         image.src = app.url;
 
         // [ CLICKABLE FUNCTION ]
