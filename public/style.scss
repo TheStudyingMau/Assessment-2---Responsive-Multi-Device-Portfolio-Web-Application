@@ -150,7 +150,7 @@ button {
 }
 
 #viewimage.active { // Responsible for displaying the viewing image section of the website.
-    display:block;
+    display:flex;
 }
 
 #viewimage { // Constructing the view image HTML's Styles.

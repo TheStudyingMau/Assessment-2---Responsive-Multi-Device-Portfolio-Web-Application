@@ -146,7 +146,7 @@ button {
 }
 
 #viewimage.active {
-  display: block;
+  display: flex;
 }
 
 #viewimage {

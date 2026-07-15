@@ -143,6 +143,23 @@ createGallery3()
 createAltGallery1();
 createAltGallery3();
 
+// [ VIEWING IMAGES ]
+
+function viewimage(data) {
+    document.getElementById("viewimage").classList.add("active");
+    document.getElementById("gallery1").classList.add("active");
+    document.getElementById("header2").classList.add("active");
+    document.getElementById("buttons2").classList.add("active");
+
+    const imageview = document.getElementById("contentimg");
+    const h1 = document.getElementById("contenttitle");
+    const a = document.getElementById("viewpost");
+
+    imageview.src = data.url;
+    h1.textContent = data.name;
+    a.href = data.source;
+}
+
 // [ COMMISSION INQUIRY  ]
 
 // [POPUPS]
