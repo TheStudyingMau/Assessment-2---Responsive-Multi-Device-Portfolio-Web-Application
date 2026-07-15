@@ -175,7 +175,8 @@ button {
 #viewimage #popupcontent img {
   max-width: 40%;
   max-height: 90%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #header2 {

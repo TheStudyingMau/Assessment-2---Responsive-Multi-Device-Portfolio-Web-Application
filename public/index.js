@@ -79,7 +79,7 @@ async function createAltGallery1() {
 
         // [ CLICKABLE FUNCTION ]
         image.addEventListener('click', () => {
-            window.location.href = game.url; // navigates in the same tab
+            window.location.href = game.source; // navigates in the same tab
             // or: window.open(game.url, '_blank'); // opens in a new tab
         });
         
