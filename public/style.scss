@@ -180,9 +180,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 40%;
+    max-height: 40%;
 
         img {
-            max-width: 40%;
+            max-width: 90%;
             max-height: 90%;
             object-fit: contain;
         }
