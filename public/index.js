@@ -146,11 +146,11 @@ createAltGallery3();
 // [ LOCK SCROLLS ]
 
 function lockScroll() { 
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = "hidden";  // Locks scrolling
 }
 
 function unlockScroll() {
-    document.body.style.overflow = "";
+    document.body.style.overflow = ""; // Enables overflow - allowing scroll.
 }
 
 
@@ -164,7 +164,7 @@ function viewimage(data) {
     const h1 = document.getElementById("contenttitle");
     const a = document.getElementById("viewpost");
 
-    lockScroll(); // ← prevent scrolling
+    lockScroll(); // ← prevents scrolling
 
     imageview.src = data.url;
     h1.textContent = data.name;
@@ -174,11 +174,12 @@ function viewimage(data) {
 // [ POP UP EXIT FUNCTION ]
 window.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("viewimage");
+    const overlay2 = document.getElementById("popupcontent");
     const image = document.getElementById("contentimg");
 
     overlay.addEventListener("click", function(e) {
         // If the click target IS the overlay (not the image), close it
-        if (e.target === overlay) {
+        if (e.target === overlay && e.target == overlay2) {
             overlay.classList.remove("active");
             unlockScroll(); // ← restore scrolling
         }
