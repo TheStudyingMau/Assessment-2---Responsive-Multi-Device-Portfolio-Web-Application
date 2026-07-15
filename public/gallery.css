@@ -15,7 +15,6 @@
   grid-auto-columns: 250px;
   grid-template-rows: repeat(2, 250px);
   width: 95%;
-  height: 1000%;
   gap: 15px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -147,6 +146,8 @@
 #card2 img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: 100%;
+  max-height: 70%;
 }
 
 #buttons2 button {
