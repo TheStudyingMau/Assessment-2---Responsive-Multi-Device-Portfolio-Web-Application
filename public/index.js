@@ -143,6 +143,17 @@ createGallery3()
 createAltGallery1();
 createAltGallery3();
 
+// [ LOCK SCROLLS ]
+
+function lockScroll() { 
+    document.body.style.overflow = "hidden"; 
+}
+
+function unlockScroll() {
+    document.body.style.overflow = "";
+}
+
+
 // [ VIEWING IMAGES ]
 
 function viewimage(data) {
@@ -153,6 +164,8 @@ function viewimage(data) {
     const h1 = document.getElementById("contenttitle");
     const a = document.getElementById("viewpost");
 
+    lockScroll(); // ← prevent scrolling
+
     imageview.src = data.url;
     h1.textContent = data.name;
     a.href = data.source;
@@ -160,11 +173,14 @@ function viewimage(data) {
 
 // [ POP UP EXIT FUNCTION ]
 window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("viewimage").addEventListener("click", function(e) {
-        const popup = document.getElementById("popupcontent");
-        
-        if (!popup.contains(e.target)) {
-            this.classList.remove("active");
+    const overlay = document.getElementById("viewimage");
+    const image = document.getElementById("contentimg");
+
+    overlay.addEventListener("click", function(e) {
+        // If the click target IS the overlay (not the image), close it
+        if (e.target === overlay) {
+            overlay.classList.remove("active");
+            unlockScroll(); // ← restore scrolling
         }
     });
 });
