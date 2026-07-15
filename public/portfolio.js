@@ -72,7 +72,6 @@ function switchTheme(){
     document.documentElement.style.setProperty('--maincolor', '#3A79CC');
     document.documentElement.style.setProperty('--accentcolor', '#2B2B2B');
     document.documentElement.style.setProperty('--hovercolor', 'black');
-    document.getElementById('commissioninfo').style.color = 'white';
 
     // Changes the background image.
     document.documentElement.style.setProperty('--altbackground', 'url("Images/darkened-background3.png")');
@@ -96,7 +95,6 @@ function restoreTheme(){
     document.documentElement.style.setProperty('--maincolor', '#DB0F0F');
     document.documentElement.style.setProperty('--accentcolor', '#647271');
     document.documentElement.style.setProperty('--hovercolor', 'white');
-    document.getElementById('commissioninfo').style.color = 'black';
 
     // Restores the background image.
     background = document.getElementById('backgroundimg');
