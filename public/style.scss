@@ -151,12 +151,13 @@ button {
 
 #viewimage.active { // Responsible for displaying the viewing image section of the website.
     display:flex;
+    justify-content: center;
 }
 
 #viewimage { // Constructing the view image HTML's Styles.
-    display:none; 
+    display:none;
     margin:0px 50px;
-    height:100vh;
+    height:75vh;
     width:100%;
 
     section {
@@ -164,16 +165,6 @@ button {
         display:flex;
         width:5%;
         justify-content: center;
-
-        button {
-            width: 50px;
-            height: 50px;
-            border: 0px;
-            background-color: alpha($color: #000000);
-            background-image: url(Images/exit2.png);
-            background-size: cover;
-        }
-
     }
 
     figure {

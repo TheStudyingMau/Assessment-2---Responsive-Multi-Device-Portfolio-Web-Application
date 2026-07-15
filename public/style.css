@@ -147,12 +147,13 @@ button {
 
 #viewimage.active {
   display: flex;
+  justify-content: center;
 }
 
 #viewimage {
   display: none;
   margin: 0px 50px;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
 }
 #viewimage section {
@@ -160,14 +161,6 @@ button {
   display: flex;
   width: 5%;
   justify-content: center;
-}
-#viewimage section button {
-  width: 50px;
-  height: 50px;
-  border: 0px;
-  background-color: 1;
-  background-image: url(Images/exit2.png);
-  background-size: cover;
 }
 #viewimage figure {
   padding-right: 25px;

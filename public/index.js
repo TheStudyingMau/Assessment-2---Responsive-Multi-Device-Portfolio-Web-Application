@@ -147,9 +147,7 @@ createAltGallery3();
 
 function viewimage(data) {
     document.getElementById("viewimage").classList.add("active");
-    document.getElementById("gallery1").classList.add("active");
     document.getElementById("header2").classList.add("active");
-    document.getElementById("buttons2").classList.add("active");
 
     const imageview = document.getElementById("contentimg");
     const h1 = document.getElementById("contenttitle");
