@@ -140,8 +140,7 @@
 }
 
 #altgallery1 img, #altgallery2 img, #altgallery3 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 100%;
   max-height: 50%;
 }
