@@ -25,16 +25,13 @@ async function createGallery2() {
     comicList.forEach(comic => {
         const a = document.createElement("a"); // Creates an anchor link to wrap the comic for access.
         const image = document.createElement("img"); // Creates an image tag needed to display the comic.
-        const title = document.createElement("h1"); // Creates a label for the comic 
 
         a.href = comic.source; // Attaches the link to the comic to the anchor link.
         a.id = "card"; // Assigns ID for the anchor link for CSS recognition.
         image.src = comic.url; // Attaches the directory to display the image.
-        title.textContent = comic.name; // Attaches the comic name to the prepared h1.
 
         // Appends two elements into the anchor link to wrap the content.
         a.appendChild(image);
-        a.appendChild(title);
         gallery2.appendChild(a); // Then appends the anchor link to the gallery 2 container.
     })
 }

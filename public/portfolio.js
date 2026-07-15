@@ -64,9 +64,9 @@ function switchTheme(){
     themeswitch = true;
     
     // Theme is changed.
-    document.getElementById('gallerybtn1').textContent = "Game Dev";
+    document.getElementById('gallerybtn1').textContent = "Games";
     document.getElementById('gallerybtn2').textContent = "Websites";
-    document.getElementById('gallerybtn3').textContent = "Creative Projects";
+    document.getElementById('gallerybtn3').textContent = "Apps";
     document.documentElement.style.setProperty('--btn_image', 'url("Images/switchbutton2.png")');
     document.documentElement.style.setProperty('--btn_hover_image', 'url("Images/glowbutton2.png")');
     document.documentElement.style.setProperty('--maincolor', '#3A79CC');
