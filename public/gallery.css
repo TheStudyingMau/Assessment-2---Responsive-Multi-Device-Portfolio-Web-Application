@@ -97,16 +97,6 @@
   gap: 15px;
   animation: fadeIn 0.5s ease-in-out;
 }
-#altgallery2 img {
-  width: 250px;
-  height: 250px;
-}
-#altgallery2 p {
-  font-size: 25px;
-}
-#altgallery2.active {
-  display: none;
-}
 
 #altgallery3 {
   display: flex;

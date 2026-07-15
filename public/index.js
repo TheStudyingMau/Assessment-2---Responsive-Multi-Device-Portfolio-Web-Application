@@ -90,6 +90,33 @@ async function createAltGallery1() {
 }
 
 async function createAltGallery3() {
+    const response = await fetch('/Websites');
+    const websiteList = await response.json();
+
+    const altgallery2 = document.getElementById('altgallery2');
+
+    websiteList.forEach(website => {
+       
+        const card = document.createElement('figure');  // Frame
+        const image = document.createElement('img'); // Element
+
+        // Assigning the Details
+        card.id = "card2";
+        image.src = website.url;
+
+        // [ CLICKABLE FUNCTION ]
+        image.addEventListener('click', () => {
+            window.location.href = website.source; // navigates in the same tab
+            // or: window.open(game.url, '_blank'); // opens in a new tab
+        });
+        
+        // Appending the elements in the HTML.
+        card.append(image);
+        altgallery2.append(card);
+    })
+}
+
+async function createAltGallery3() {
     const response = await fetch('/Apps');
     const projectList = await response.json();
 

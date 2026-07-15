@@ -83,6 +83,26 @@ app.get ('/Animations', async (req, res) => {
 	
 });
 
+// Gets the website projects data needed for the website.
+app.get ('/Websites', async (req, res) => {
+	try { // Tries to connect to MongoDB.
+		await client.connect();
+	
+		const Database = client.db('Images');
+		const websiteCollection = Database.collection('Websites'); // Gets the Projects Collection from my MongoDB
+		
+		// Finds the collection and stores it in an array.
+		const websiteEntries = await websiteCollection.find().toArray();
+
+		// Returns the collections to the front-end as JSON for use.
+		res.json(websiteEntries); 
+
+	} catch (error) { // Any exception will be displayed in console.
+		console.error("Error fetching projects:", error);
+		res.status(500).json({ error: "Failed to fetch data." })
+	}
+});
+
 // Gets the game developemnt asset data needed for the website.
 app.get ('/Games', async (req, res) => {
 	try { // Tries to connect to MongoDB.
