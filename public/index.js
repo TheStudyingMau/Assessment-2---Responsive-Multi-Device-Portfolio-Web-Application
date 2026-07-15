@@ -167,19 +167,17 @@ function viewimage(data) {
     lockScroll(); // ← prevents scrolling
 
     imageview.src = data.url;
-    h1.textContent = data.name;
     a.href = data.source;
 }
 
 // [ POP UP EXIT FUNCTION ]
 window.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("viewimage");
-    const overlay2 = document.getElementById("popupcontent");
     const image = document.getElementById("contentimg");
 
     overlay.addEventListener("click", function(e) {
-        // If the click target IS the overlay (not the image), close it
-        if (e.target === overlay || e.target == overlay2) {
+        // Anything that isn't a direct click on the image counts as "outside"
+        if (e.target !== image) {
             overlay.classList.remove("active");
             unlockScroll(); // ← restore scrolling
         }
