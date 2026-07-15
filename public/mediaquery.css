@@ -52,7 +52,7 @@
   #altgallery1 {
     flex-direction: column;
   }
-  #card2 img {
+  #altgallery1 img, #altgallery2 img, #altgallery3 img {
     width: 400px;
     height: 500px;
   }
@@ -235,11 +235,11 @@
     width: 200px;
     height: 200px;
   }
-  #card2 {
+  #altgallery1, #altgallery2, #altgallery3 {
     flex-direction: column;
     gap: 15px;
   }
-  #card2 img {
+  #altgallery1 img, #altgallery2 img, #altgallery3 img {
     width: 100%;
     height: 200px;
   }
