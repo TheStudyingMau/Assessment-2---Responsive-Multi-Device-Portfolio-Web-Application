@@ -32,7 +32,7 @@ html {
 
 body {
     margin:0px;
-    background-color: black;
+    background-color: var(--backgroundcolor);
     font-family: "Instrument Sans", sans-serif;
 }
 
@@ -102,11 +102,11 @@ button {
     a {
         background-color: var(--maincolor);
         border: 0;
-        border-radius: 15px;
+        border-radius: 30px;
         padding: 15px 35px;
         text-align: center;
         text-decoration: none;
-        color:black;
+        color:white;
         font-size: 15px;
         font-weight: bold;
         font-family: "Instrument Sans", sans-serif;
@@ -134,7 +134,7 @@ button {
 }
 
 #backgroundimg {
-    flex-grow: 5;
+    flex-grow: 3;
     height: 100vh;
     object-fit: cover;
 }
@@ -144,7 +144,6 @@ button {
 #Portfolio {
     flex-direction: column;
     align-items: center;
-    background-color: black;
     color:white;
     gap:25px;
     height: 100vh;
@@ -262,11 +261,12 @@ button {
 
 #Commissions {
     padding: 0px 50px;
+    gap:25px;
     display:flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: url(Images/background2.PNG);
+    background-color: var(--backgroundcolor);
     background-size: cover;
     background-position: 0 center;
     color:white;
@@ -330,7 +330,7 @@ button {
     display:flex;
     flex-direction: column;
     gap: 15px;
-    width:100%;
+    width:300%;
 
     #formbutton {
         align-self: center;
@@ -338,6 +338,23 @@ button {
 
     #exitbutton {   
         display:none;
+    }
+
+    article {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        a {
+            font-size: 30px;
+            color:white;
+
+            &:hover {
+                color:var(--maincolor)
+            }
+        }
     }
 }
 
@@ -363,7 +380,7 @@ input, select {
     font-family: "Instrument Sans", sans-serif;
     text-align:start;
     padding: 15px;
-    height: 292px;
+    height: 250px;
 }
 
 #formbutton {
@@ -395,7 +412,7 @@ select {
 
 footer {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
@@ -410,35 +427,19 @@ footer {
         gap:50px;
         width: 65%;
     }
-}
 
-#textbox2 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-}
-
-#info {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 50%;
-    gap:25px;
-    width: 100%;
-
-    img {
-        width:275px;
-        height:60px;
+    p {
+        font-size:18px;
+        width: 55%;
     }
 }
+
 
 #socials2 {
     display:flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
-    height:75%;
 
     a {
         text-decoration: none;
@@ -459,8 +460,8 @@ footer {
 }
 
 #profile2{
-    height:412px;
-    width:412px;
+    height:250px;
+    width:250px;
     border: 3px solid white;
     border-radius: 25px;
 }
@@ -470,6 +471,7 @@ footer {
 }
 
 h1, p, figure {
+    text-align: center;
     margin:0px;
 }
 

@@ -26,13 +26,12 @@
 
     <body>
 
-        <!-- Landing Page-->
-        <header>
+        <header> <!-- Landing Page-->
             <div id="landingpage">
                 <img id="profile" src="Images/pfp.PNG">
                 <figure id="Title">
                     <h1>TheAnonymousMau</h1>
-                    <p>Illustrator / Animator / Coder</p>
+                    <p>Illustrator  /  Comic Artist  /  Coder</p>
                 </figure>
                 
                 
@@ -107,59 +106,45 @@
             <figure id="textbox">
                 <div id="Title2">
                     <h1>COMMISSIONS</h1>
-                    <p>Comics, illustrations, or animations are all in my range for my commission sheet. Press the button below to know more about my commission sheet which contains the pricing and conditions.</p>
-                    <p>When you’re interested, you can contact me through my email below.</p>
-                    <p id="email">theanonymousmau@gmail.com</p>
+                    <p>Press the button below to know your options from the commission sheet. When you’re interested, fill in the details and press the button for your request..</p>
                 </div>
-
-                <a id="commissioninfo" href="https://www.instagram.com/p/DUBlL0tE7Zq/?img_index=1">Commission Info</a>
-                <a id="inquire" onclick="openpopup()">Inquire</a>
             </figure>
 
             <!-- This handles the form to be displayed normally or as a popup-->
             <!-- The form is heavily wrapped to be able to darkened the background page by my popup forum page in phone & tablet sizes. -->
-            <figure id="popup">
-                <div id="Overlay">
-                    <section id="Form">
-                        <form id="forum">
-                            <button id="exitbutton" type="button" onclick="closepopup()"></button>
-                            <input placeholder="Email" type="text" id="emailaddress">
-                            <select id="dropdown">
-                                <option value="comics">Comics</option>
-                                <option value="artwork" selected>Artwork</option>
-                                <option value="animation">Animation</option>                   
-                            </select>
-                            <textarea id="description" type="text" placeholder="Description"></textarea>
-                             <button id="formbutton" type="submit">Submit</button>
-                        </form>
-                    </section>
-                </div>
-            </figure>
+            <section id="Form">
+                <form id="forum">
+                    <input placeholder="Email" type="text" id="emailaddress">
+                    <select id="dropdown">
+                        <option value="comics">Comics</option>
+                        <option value="artwork" selected>Artwork</option>
+                        <option value="animation">Animation</option>                   
+                    </select>
+                    <textarea id="description" type="text" placeholder="Description"></textarea>
+                            
+                    <article>
+                        <button id="formbutton" type="submit">Submit</button>
+                        <a class="fa-solid fa-circle-info"></a>
+                    </article>  
+                </form>
+            </section>
+            
         </main>
 
         <!-- Footer holds the rest of the about info. -->
         <footer id="About">
-            <aside>
-                <section id="textbox2">
-                    <h1>ABOUT ME</h1>
-                    <p>I am a professional illustrator, developing animator, and a growing coder. My freelance service brings your ideas to life at a fair price.</p>
-                    <p>Connect with me through my socials below or my commissions page to start your project today!</p>
-                </section>
-
-                <section id="info">
-                    <figure id="experienceinfo">
-                        <h1>4</h1>
-                        <img src="Images/subtitle.png">
-                    </figure>
-
-                    <figure id="socials2">
-                        <a href="https://www.instagram.com/theanonymousmau/" class="fa-brands fa-instagram"></a>
-                        <a href="https://www.youtube.com/@theanonymousmau" class="fa-brands fa-youtube"></a>
-                    </figure>
-                </section>
-            </aside>
+            <h1>ABOUT</h1>
 
             <img id="profile2" src="Images/profile.png">
+            
+            <p>I am a professional illustrator, developing animator, and a growing coder. My freelance service brings your ideas to life at a fair price. Connect with me through my socials below or my commissions page to start your project today!</p>
+
+            <figure id="socials2">
+                <a href="https://www.instagram.com/theanonymousmau/" class="fa-brands fa-instagram"></a>
+                <a href="https://www.youtube.com/@theanonymousmau" class="fa-brands fa-youtube"></a>
+            </figure>
+
+            <p>theanonymousmau@gmail.com</p>
 
         </footer>
         
