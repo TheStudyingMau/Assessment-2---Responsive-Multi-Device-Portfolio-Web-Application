@@ -162,21 +162,23 @@ button {
     width: 100vw;
     height: 100vh;
 
-    background: rgba(0, 0, 0, 0.75); /* dark backdrop */
+    // DARK BACKDROP
+    background: rgba(0, 0, 0, 0.75); 
     backdrop-filter: blur(3px);
 
-    justify-content: center;
+    // ALIGNMENT
     align-items: center;
 
-    z-index: 99999; /* above everything */
+    z-index: 99999; // ABOVE EVERYTHING
+
+    // PADDING & MARGIN
     padding: 0;
     margin: 0;
 
     img {
-        width: 45%;
-        height: 100vh;
-        object-fit:contain;
-        object-position: center;
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
     }
 }
 
