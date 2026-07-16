@@ -25,8 +25,8 @@
     padding: 15px 35px;
   }
   #viewimage #popupcontent img {
-    max-width: 70%;
-    max-height: 100%;
+    max-width: 40%;
+    max-height: 90%;
   }
   #gallery1 {
     width: 85%;
@@ -188,8 +188,8 @@
     padding: 15px 35px;
   }
   #viewimage #popupcontent img {
-    max-width: 40%;
-    max-height: 90%;
+    max-width: 70%;
+    max-height: 100%;
   }
   #buttons2 {
     overflow-y: hidden;
