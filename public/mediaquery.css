@@ -25,7 +25,7 @@
     padding: 15px 35px;
   }
   #viewimage #popupcontent img {
-    max-width: 100%;
+    max-width: 40%;
     max-height: 90%;
   }
   #gallery1 {
