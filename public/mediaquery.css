@@ -68,7 +68,7 @@
   #Commissions {
     justify-content: center;
     text-align: center;
-    gap: 15px;
+    gap: 35px;
   }
   #textbox {
     width: 85%;
@@ -188,7 +188,7 @@
     padding: 15px 35px;
   }
   #viewimage #popupcontent img {
-    max-width: 90%;
+    max-width: 40%;
     max-height: 90%;
   }
   #buttons2 {
