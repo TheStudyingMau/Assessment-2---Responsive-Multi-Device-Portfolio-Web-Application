@@ -189,7 +189,7 @@
   }
   #viewimage #popupcontent img {
     max-width: 70%;
-    max-height: 100%;
+    max-height: 100%; /* READJUSTED HEIGHT */
   }
   #buttons2 {
     overflow-y: hidden;
